@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDB11EEA-8D7B-42F8-905E-B23A0A89DE64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AUTODIAGNÓSTICO_MÉDICO</RootNamespace>
+    <AssemblyName>AUTODIAGNÓSTICO MÉDICO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormInfecc_Oido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfecc_Oido.Designer.cs">
+      <DependentUpon>FormInfecc_Oido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfluenza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfluenza.Designer.cs">
+      <DependentUpon>FormInfluenza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSinusitis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSinusitis.Designer.cs">
+      <DependentUpon>FormSinusitis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfecciones_Piel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfecciones_Piel.Designer.cs">
+      <DependentUpon>FormInfecciones_Piel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfecc_Garganta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfecc_Garganta.Designer.cs">
+      <DependentUpon>FormInfecc_Garganta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInfecc_Urinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInfecc_Urinaria.Designer.cs">
+      <DependentUpon>FormInfecc_Urinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResfriado_Comun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResfriado_Comun.Designer.cs">
+      <DependentUpon>FormResfriado_Comun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormINGRESO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormINGRESO.Designer.cs">
+      <DependentUpon>FormINGRESO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatosPersonales.cs" />
+    <Compile Include="FormBronquitis_Aguda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBronquitis_Aguda.Designer.cs">
+      <DependentUpon>FormBronquitis_Aguda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSintomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSintomas.Designer.cs">
+      <DependentUpon>FormSintomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormInfecc_Oido.resx">
+      <DependentUpon>FormInfecc_Oido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfluenza.resx">
+      <DependentUpon>FormInfluenza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSinusitis.resx">
+      <DependentUpon>FormSinusitis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfecciones_Piel.resx">
+      <DependentUpon>FormInfecciones_Piel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfecc_Garganta.resx">
+      <DependentUpon>FormInfecc_Garganta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInfecc_Urinaria.resx">
+      <DependentUpon>FormInfecc_Urinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResfriado_Comun.resx">
+      <DependentUpon>FormResfriado_Comun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormINGRESO.resx">
+      <DependentUpon>FormINGRESO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBronquitis_Aguda.resx">
+      <DependentUpon>FormBronquitis_Aguda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSintomas.resx">
+      <DependentUpon>FormSintomas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ear-infection-lg-sp-small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2021-04-19 223605.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
